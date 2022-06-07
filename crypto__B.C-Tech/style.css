@@ -1,0 +1,123 @@
+:root{
+    --background-color:#0d0d0d;
+    --primary-font-color:#f5faf3;
+    --green-button:#01e3A4;
+    --secondary-background:#0A1416;
+}
+/*RESET*/
+body{
+    box-sizing: border-box;
+}
+body,p,a,ul,li{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+li{
+    list-style-type: none;
+}
+/*BASE-STYLES*/
+
+body{
+    background-color: var(--background-color);
+    color: var(--primary-font-color);
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+button{
+    border: #01e3A4 1px solid;
+    padding: 0.5em 1.5em;
+    background-color: transparent;
+    color: inherit;
+    border-radius: 5px;
+}
+
+/*FONTS*/
+
+
+
+
+/*MOBILE-STYLES*/
+.logo{
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+#logodot{
+    color: #01e3A4;
+}
+nav ul{
+    display: none;
+}
+header{
+    background: url("../crypto__B.C-Tech/img/image.svg");
+    background-repeat: repeat;
+    background-size: 150%;
+    padding: 1rem;
+    text-align: center;
+}
+.header-items{
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   gap: 2rem;
+}
+.header-text p{
+    font-size: 1.3rem;
+    color: #a8ccc283;
+}
+.header-image img{
+    width: 100%;
+}
+.header-text-button{
+    display: inline-block;
+    background-color: var(--green-button);
+    padding: 0.8rem 2rem;
+    color: var(--background-color);
+    font-size: 1.2rem;
+    box-shadow: 0px 8px 20px #01e3a385;
+    transition: all 500ms ease;
+}
+.header-text-button:focus{
+    border: #01e3A4 1px solid;
+    background-color: transparent;
+    color: inherit;
+}
+
+
+
+
+
+
+
+
+/*SMALL-TABLETS*/
+@media screen and (min-width:620px) {
+    
+}
+
+
+
+/*LARGE-TABLETS AND LAPTOPS*/
+
+@media screen and (min-width:960px) {
+    
+}
+
+
+
+
+
+/*DESKTOPS*/
+
+@media screen and (min-width:1200px) {
+    
+}

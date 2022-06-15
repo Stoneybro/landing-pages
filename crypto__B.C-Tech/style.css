@@ -20,12 +20,16 @@ li{
     list-style-type: none;
 }
 /*BASE-STYLES*/
+@font-face {
+    font-family: "poppins";
+    src: url(/landing-pages/crypto__B.C-Tech/font-poppins/Poppins-Regular.ttf);
+}
 
 body{
     background-color: var(--background-color);
     color: var(--primary-font-color);
     overflow-x: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:"poppins";
     font-size: 16px;
 }
 
@@ -33,7 +37,7 @@ body{
     display: grid;
     grid-template-columns: repeat(12,1fr);
 }
-button{
+.button{
     border: #01e3A4 1px solid;
     padding: 1rem 3rem;
     background-color: transparent;
@@ -42,7 +46,7 @@ button{
     font-size: 1.2rem;
     box-shadow: 0px 8px 20px #01e3a385;
 }
-button:focus{
+.button:focus{
     border: #01e3A4 1px solid;
     background-color: #01e3A4;
     color: black;
@@ -92,10 +96,15 @@ header{
     display: none;
 }
 .header-items{
-   display: flex;
-   flex-direction: column;
    text-align: center;
    gap: 2rem;
+}
+.header-text{
+    grid-column: 1/13;
+}
+.header-image{
+    grid-column: 1/13;
+    grid-row: 2;
 }
 .header-text p{
     font-size: 1.3rem;
@@ -107,6 +116,7 @@ header{
 .header-text-button{
     background-color: var(--green-button);
     color: var(--background-color);
+    justify-self: center;
 }
 .header-text-button:focus{
     border: #01e3A4 1px solid;
@@ -198,7 +208,7 @@ header{
     margin-bottom: 2rem;
 }
 .hdww{
-    height: 145vh;
+    height: 172vh;
     background-color:rgba(11, 26, 21, 0.664) ;
     border-radius: 20rem 0 0 13rem;
     text-align: center;
@@ -238,12 +248,79 @@ header{
     margin-top: 1rem;
 }
 
+.reviews{
+    background-color: #072e2b;
+    background: url(/landing-pages/crypto__B.C-Tech/img/digital-futuristic-technology-particle-wave-design_1017-30515\ 2.svg);
+    height: 75vh;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #01e3a310;
+}.reviews h2{
+    font-size: 3rem;
+}
+.fa-solid{
+    color: #01e3A4;
+    font-size: 2rem;
+}
+.review-tcontent{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.review-tcontent p{
+    padding: 0 1rem;
+}
+footer{
+    text-align: center;
+    background: url(/landing-pages/crypto__B.C-Tech/img/—Pngtree—global\ science\ and\ technology\ information_5268568\ 2.svg);
+    padding: 2rem 2rem;
+}
+.fa-brands{
+    color: #01e3A4;
+    font-size: 2rem;
+}
+footer input{
+    position: relative;
+    border: #01e3A4 1px solid;
+    background-color: transparent;
+    width: 15rem;
+    height: 3rem;
+}
+footer button{
+    background-color: #01e3A4;
+    border: none;
+   padding: 0.9rem;
+    margin-left: -2px;
+   border-radius:0 3px 3px 0;
+   font-family: "poppins";
+   font-size: 1rem;
+}
+footer ul{
+    padding-left:0 ;
+    padding-top: 1rem;
+}
+
 
 
 /*SMALL-TABLETS*/
 @media screen and (min-width:620px) {
-   
+ .header-text{
+    grid-column: 1/6;
+ }  
+ .header-image{
+    grid-column: 6/13;
+    grid-row: 1;
+ }
+ .header-image img{
+    width: 150%;
+ }
+ header{
+    height: 100vh;
+ }
+
 }
+
+
 
 
 
